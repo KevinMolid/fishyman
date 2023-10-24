@@ -56,23 +56,28 @@
             </section>
         </main>
 
-        <div class="logIn-modal" id="logIn-modal">
+        <div class="login-form-div" id="login-form-div">
             <button class="close" id="login-close-btn">X</button>
             <h1>Log in to <span class="acsent-text">Fishyman</span></h1>
             <form>
                 <label for="username-input">Username</label>
                 <input
                     type="text" 
-                    nam="username"
+                    name="username-input"
                     class="login-field" 
-                    id="username-input">
+                    id="username-input"
+                    required>
                 <label for="password-input">Password</label>
                 <input 
                     type="password" 
-                    name="password"
+                    name="password-input"
                     class="login-field" 
-                    id="password-input">
-                <button class="display-block" id="login-btn">Log in</button>
+                    id="password-input"
+                    required>
+                <button 
+                    type="submit"
+                    class="display-block" 
+                    id="login-btn">Log in</button>
             </form>
         </div>
 

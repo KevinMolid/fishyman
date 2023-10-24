@@ -1,11 +1,11 @@
 const logInMenuBtn = document.getElementById("logIn-menu-btn")
-const logInModal = document.getElementById("logIn-modal")
+const loginFormDiv = document.getElementById("login-form-div")
 const loginCloseBtn = document.getElementById("login-close-btn")
 
 logInMenuBtn.addEventListener("click", function() {
-    logInModal.style.display = "flex"
+    loginFormDiv.style.display = "flex"
 })
 
 loginCloseBtn.addEventListener("click", function() {
-    logInModal.style.display = "none"
+    loginFormDiv.style.display = "none"
 })

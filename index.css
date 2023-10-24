@@ -147,7 +147,7 @@ footer {
 
 /* Hidden */
 
-.logIn-modal {
+.login-form-div {
     display: none;
     flex-direction: column;
     width: 400px;
@@ -166,17 +166,17 @@ footer {
     box-shadow: 5px 5px 20px rgba(99, 99, 99, 0.5);
 }
 
-.logIn-modal form {
+.login-form-div form {
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
-.logIn-modal h1 {
+.login-form-div h1 {
     font-weight: 200;
 }
 
-.logIn-modal .acsent-text {
+.login-form-div .acsent-text {
     font-size: 50px;
     font-weight: 800;
     display: block;
@@ -191,7 +191,7 @@ footer {
     border: none;
 }
 
-.logIn-modal p, .login-field {
+.login-form-div p, .login-field {
     margin: 0 0 10px 0;
 }
 
