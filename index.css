@@ -7,6 +7,9 @@ html, body {
     font-size: 20px;
 }
 
+/* Typography */
+
+
 /* Layout */
 
 header,
@@ -38,8 +41,15 @@ ul {
     width: 80px;
 }
 
-#logo, a {
+#logo, a, .link-btn {
     color: #4ac0f9;
+}
+
+.link-btn {
+    font-size: 20px;
+    background: none;
+    border: none;
+    margin: none;
 }
 
 #logo {
@@ -56,8 +66,12 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:focus,
+.link-btn:hover,
+.link-btn:focus {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 header p {
@@ -133,21 +147,8 @@ header p {
     cursor: pointer;
 }
 
-/* Footer */
-
-footer {
-    width: 100%;
-    bottom: 0;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: white;
-    padding: 10px 0;
-}
-
-/* Hidden */
-
-.login-form-div {
+/* Login form */
+.form-div {
     display: none;
     flex-direction: column;
     width: 400px;
@@ -166,23 +167,23 @@ footer {
     box-shadow: 5px 5px 20px rgba(99, 99, 99, 0.5);
 }
 
-.login-form-div form {
+.form-div form {
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
-.login-form-div h1 {
+.form-div h1 {
     font-weight: 200;
 }
 
-.login-form-div .acsent-text {
+.form-div .acsent-text {
     font-size: 50px;
     font-weight: 800;
     display: block;
 }
 
-.login-field {
+.input-field {
     font-size: 16px;
     width: 300px;
     padding: 10px 20px;
@@ -191,11 +192,11 @@ footer {
     border: none;
 }
 
-.login-form-div p, .login-field {
+.form-div p, .input-field {
     margin: 0 0 10px 0;
 }
 
-#login-btn {
+.submit-btn {
     font-size: 16px;
     width: 200px;
     padding: 20px;
@@ -204,12 +205,30 @@ footer {
     margin-top: 16px;
 }
 
-#login-btn:hover {
+.submit-btn:hover {
     background-color: white;
     cursor: pointer;
 }
 
-/* Buttons */
+.close {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border: none;
+    border-radius: 0 10px 0 0;
+}
+
+.close:hover,
+.close:focus,
+.close:active {
+    color: white;
+    background-color: #e81123;
+    cursor: pointer;
+}
+
+/* Menu */
 
 .menu-btn {
     font-size: 16px;
@@ -230,20 +249,15 @@ footer {
     display: block;
 }
 
-.close {
-    height: 40px;
-    width: 40px;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    border: none;
-    border-radius: 0 10px 0 0;
-}
 
-.close:hover,
-.close:focus,
-.close:active {
-    color: white;
-    background-color: #e81123;
-    cursor: pointer;
+/* Footer */
+
+footer {
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 10px 0;
 }

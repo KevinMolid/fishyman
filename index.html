@@ -34,7 +34,7 @@
         <main>
             <section class="text-section">
                 <h1>Experience the <strong>stupid epic fishing</strong> adventure!</h1>
-                <p><a href="">Register now</a> to start playing!</p>
+                <p><button class ="link-btn" id ="register-a">Register now</button>to start playing!</p>
             </section>
             <section class="hero-section">
                 <div>
@@ -56,28 +56,53 @@
             </section>
         </main>
 
-        <div class="login-form-div" id="login-form-div">
+        <div class="form-div" id="login-form-div">
             <button class="close" id="login-close-btn">X</button>
             <h1>Log in to <span class="acsent-text">Fishyman</span></h1>
-            <form>
+            <form id="login-form">
                 <label for="username-input">Username</label>
                 <input
                     type="text" 
                     name="username-input"
-                    class="login-field" 
+                    class="input-field" 
                     id="username-input"
                     required>
                 <label for="password-input">Password</label>
                 <input 
                     type="password" 
                     name="password-input"
-                    class="login-field" 
+                    class="input-field" 
                     id="password-input"
                     required>
                 <button 
                     type="submit"
-                    class="display-block" 
+                    class="display-block submit-btn" 
                     id="login-btn">Log in</button>
+            </form>
+        </div>
+
+        <div class="form-div" id="register-form-div">
+            <button class="close" id="register-close-btn">X</button>
+            <h1>Register to <span class="acsent-text">Fishyman</span></h1>
+            <form id="register-form">
+                <label for="username-input">E-mail</label>
+                <input
+                    type="email" 
+                    name="email-input"
+                    class="input-field" 
+                    id="email-input"
+                    required>
+                <label for="password-input">Password</label>
+                <input 
+                    type="password" 
+                    name="password-input"
+                    class="input-field" 
+                    id="password-input"
+                    required>
+                <button 
+                    type="submit"
+                    class="display-block submit-btn" 
+                    id="register-btn">Register</button>
             </form>
         </div>
 
